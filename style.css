@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;    
+}
+body{
+    position: relative;
+    background: rgb(248, 247, 247);
+    font-family: 'roboto',sans-serif;
+}
+/* ..............navbar............. */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+.toggle-btn{
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.toggle-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #979797;
+}
+.toggle-btn span:nth-child(1){
+    top: 0;
+
+}
+.toggle-btn span:nth-child(3){
+    top: 100%;    
+}
+.logo{
+    height: 28px;
+    margin: -10px 30px 0;
+}
+/* ......................Search bar.............. */
+#smain{
+    width:100%;
+    margin:auto;
+    
+    display:flex;
+}
+button:hover{
+   cursor: pointer;
+}
+#search-box{
+    position: relative;
+    max-width: 600px;
+    width: 80%;
+    height: 40px;
+    display: flex;
+    margin-left: 150px;
+}
+#search-bar{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #dbdbdd;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 15%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdd;
+    padding: 5px 0;
+    border-left: none;
+    font-size: 15px;
+}
+.search-btn img{
+    height: 100%;
+}
+
+#servid{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #dbdbdd;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.mic img{
+    height: 20%;
+    border-radius: 20%;
+    margin-top:12px;
+    padding-left: 8px;
+}
+
+.user-options{
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.user-options .icon{
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.user-dp{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  overflow: hidden;
+}
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .........................sidebar................. */
+.side-bar{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-width: 200px;
+    width: 240px;
+    height: calc(100vh - 50px);
+    background: #fff;
+    padding-right: 5px;
+}
+.links{
+    display: block;
+    width: 100%;
+    padding: 10px 30px ;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+.links img{
+    height: 25px;
+    margin-right: 20px;
+    
+}
+.links:hover,
+.links.active{
+    background: rgba(0, 0, 0, 0.1);
+}
+.seperator{
+    border: none;
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+/* ......................filters........... */
+
+.filters{
+    position: fixed;
+    left: 230px;
+    top: 60px;
+    width: calc(100% - 250px);
+    height: 50px;
+    background-color:  #fff;
+    border-top: 1px solid #dbdbdd;
+    border-bottom: 1px solid #dbdbdd;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.filters::-webkit-scrollbar{
+    display: none;
+
+}
+.filter-options{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color:  rgb(244, 245, 245);
+    border: 1px solid #dbdbdd;
+    text-transform: capitalize;
+    margin-right: 8px;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+}
+.filter:hover,
+.filter-options.active{
+    color: #fff;
+    background-color: #242424;
+}
+#incard{
+    margin:10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:5px;
+    border-radius: 10px;
+    color:rgb(12, 12, 12);
+    font-size: 15px;
+
+}   
+/* ....................video design............  */
+#incard{
+    margin:10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:5px;
+    border-radius: 10px;
+    color:rgb(62, 60, 60);
+    }
+    #incard>img{
+        width:100%;
+        
+    }
+    #incard:hover{
+      cursor: pointer;
+      box-shadow: rgba(247, 242, 242, 0.3) 0px 19px 38px, rgba(246, 242, 242, 0.22) 0px 15px 12px;
+      
+    }
+    #container{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        padding-top: 74px;
+        padding-left: 25px;
+        padding-right:30px;
+        grid-gap: 15px;
+        margin:auto;     
+       
+    }
+   
